@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Todo List Example</title>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+</ul>
+
+
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1><div id="header" style="margin-top:150px;">Yale's Todo List</div></h1>
+<div id="header" >Just Drag and Drop ;)</div>
+<div class="container">
+<div class="task-list" id="pending">
+<h3>Pending</h3>
+</div>
+<div class="task-list" id="inProgress">
+<h3>In Progress</h3>
+</div>
+<div class="task-list" id="completed">
+<h3>Completed</h3>
+</div>
+<div class="task-list">
+<h3>Add a task</h3>
+<form id="todo-form">
+<input type="text" placeholder="Title" />
+<textarea placeholder="Description"></textarea>
+<input type="text" id="datepicker" placeholder="Due Date (dd/mm/yy)" />
+<input type="button" class="btn btn-primary" value="Add task" onclick="todo.add();" />
+</form>
+<input type="button" class="btn btn-primary" value="Clear all" onclick="todo.clear();"/>
+<div id="delete-div">Pag nahuman Dre e butang :D </div>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+<script src="todo.js"></script> 
+<script type="text/javascript">
+			$("#datepicker").datepicker();
+			$("#datepicker").datepicker("option", "dateFormat", "dd/mm/yy");
+			todo.init();
+		</script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
